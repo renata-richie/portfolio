@@ -1,0 +1,275 @@
+/******** HOME PAGE STYLES ********/
+
+body{
+    background-color: #FCF6EA;
+    overflow-x: hidden;
+}
+
+
+/* HOME : HEADER */
+
+header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 150px 0;
+}
+
+header h1{
+    margin-bottom: 30px;
+}
+
+header p{
+    font-weight: 400;
+    width: 70%;
+    margin-bottom: 40px;
+    font-size: 24px;
+}
+
+header a{
+    font-weight: bold;
+    color: white;
+    background-color: #D90175;
+    border-radius: 4px;
+    padding: 13px 56px;
+    transition: 0.3s ease;
+}
+
+header a:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* Décors Header : start */
+
+.deco_orange {
+    position: absolute;
+    z-index: -1;
+    width: 20vw;
+    top: 0;
+    left: 0;
+}
+
+.deco_rose {
+    position: absolute;
+    z-index: -1;
+    width: 20vw;
+    bottom: 0;
+    right: 0;
+}
+
+/* Décors Header : end */
+
+/* MAIN : PROJETS */
+#projets{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-bottom: 100px;
+}
+
+
+#projets h2{
+    margin-bottom: 80px;
+}
+.projets_gallery{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    width: 85%;
+    margin: auto;
+    justify-content: center;
+}
+
+.projets_gallery figure{
+    width: 20%;
+}
+
+.projets_gallery figure img{
+    transition: 0.2s ease;
+}
+
+.projets_gallery figure img:hover{
+    filter: brightness(70%);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* Décors Projets : start */
+
+.deco_vert {
+    position: absolute;
+    z-index: -1;
+    width: 20vw;
+    bottom: 0;
+    right: 0;
+}
+
+/* Décors Projets : end */
+
+
+/* MAIN : ENCHANTEE */
+
+/* Décors Enchantée : start */
+
+.deco_arc {
+    position: absolute;
+    z-index: -1;
+    width: 15vw;
+    top: -100px;
+    left: 0;
+}
+
+/* Décors Enchantée  : end */
+
+#enchantee{
+    padding: 100px 5%;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    justify-content: center;
+    position: relative;
+}
+
+.enchantee_texte{
+    width: 48%;
+}
+
+.enchantee_texte h2{
+    margin-bottom: 80px;
+}
+
+.enchantee_texte p{
+    margin-bottom: 30px;
+}
+
+.enchantee_texte a{
+    padding: 7px 56px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    background-color: #D90175;
+    transition: 0.3s ease;
+}
+
+.enchantee_texte a:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.enchantee_image{
+    width: 48%;
+    min-width: 437px;
+    max-width: 478px;
+}
+
+.enchantee_image img{
+    object-fit: cover;
+}
+
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    align-items: center;
+    padding: 150px 0;
+    position: relative;
+}
+
+footer h2{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+footer figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 33%;
+    gap: 20px;
+}
+
+footer figure img{
+    height: 100px;
+}
+
+/* Responsif */
+
+@media (max-width: 1023px) {
+#enchantee{
+    flex-direction: column;
+}
+
+.enchantee_texte{
+    width: 100%;
+}
+
+.enchantee_texte h2{
+    margin-bottom: 30px;
+}
+
+.enchantee_image{
+    width: 100%;
+    min-width: 237px;
+}
+}
+
+@media (max-width:960px){
+.deco_arc {
+    top: -40px;
+}
+}
+
+
+@media (max-width:668px){
+.projets_gallery{
+    gap: 30px;
+    width: 90%;
+}
+
+.projets_gallery figure{
+    width: 45%;
+}
+
+footer {
+    padding: 100px 0;
+    flex-direction: column;
+    gap: 40px;
+}
+
+footer figure {
+    width: 100%;
+}
+}
+
+@media (max-width:500px){
+    header p{
+        font-size: 20px;
+        width: 80%;
+    }
+    .deco_arc, .deco_orange, .deco_rose, .deco_vert{
+        width: 30vw;
+    }
+}
+
+
+@media (max-width:320px) {
+    .projets_gallery {
+        gap: 30px;
+        width: 90%;
+    }
+
+    .projets_gallery figure {
+        width: 100%;
+    }
+
+    
+}

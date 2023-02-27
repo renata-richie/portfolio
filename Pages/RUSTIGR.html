@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../Css/general.css">
+    <link rel="stylesheet" href="./../Css/rustigr.css">
+    <title>Renata ! RUSTIGR</title>
+</head>
+<body onload="getPics()">
+    <header class="portfolio_header">
+        <a href="./../index.html">
+            <img src="./../Pages de portefolio/home_blanc.svg" alt="icone d'une maison" class="homeIcon">
+        </a>
+        <figure>
+            <img src="./../Pages de portefolio/Rustigr/rustigr_logo.svg" alt="logo RUSTIGR" class="portfolio_logo">
+        </figure>
+    </header>
+    <main>
+        <article class="portfolio_article">
+            <section class="portfolio_section_text">
+                <p>
+                    Durant mes cours de graphisme, nous avons dû concevoir une charte
+                    graphique pour une entreprise, en utilisant comme point de départ une photo
+                    de tigre et en créant un logo à partir de celle-ci.
+                </p>
+                <p>
+                    RUSTIGR est un restaurant de fast-food de haut de gamme situé à Paris. Il
+                    propose une cuisine artisanale faite maison spécialisée en mini burgers.
+                    RUSTIGR offre des produits frais issus des producteurs locaux.
+                </p>
+            </section>
+            <section class="portfolio_section_images">
+                <figure>
+                    <img src="./../Pages de portefolio/Rustigr/rustigr1.png" alt="image montrant le travail réalisé" onclick="FullView(this.src)">
+                    <img src="./../Pages de portefolio/Rustigr/rustigr2.png" alt="image montrant le travail réalisé" onclick="FullView(this.src)">
+                </figure>
+            </section>
+        </article>
+
+        <!-- Full Image -->
+        <div id="protfolio_fullImage" onclick="this.style.display='none';">
+            <img id="fullImage">
+        </div>
+    </main>
+
+    <script src="./../js/script.js"></script>
+</body>
+</html>

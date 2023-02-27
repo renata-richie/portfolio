@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../Css/general.css">
+    <link rel="stylesheet" href="./../Css/petwish.css">
+    <title>Renata ! PETWISH</title>
+</head>
+<body onload="getPics()">
+    <!-- Header -->
+    <header class="portfolio_header">
+        <a href="./../index.html">
+            <img src="./../Pages de portefolio/home_noir.svg" alt="icone d'une maison" class="homeIcon">
+        </a>
+        <figure>
+            <img src="./../Pages de portefolio/PetWish/petwish_logo.svg" alt="logo PETWISH" class="portfolio_logo">
+        </figure>
+    </header>
+    <main>
+        <article class="portfolio_article">
+            <section class="portfolio_section_text">
+                <p>
+                    PetWish est un hôtel pour les animaux. Grâce à PetWish, les propriétaires
+                    d'animaux peuvent maintenant partir en vacances sans s'inquiéter pour leur
+                    animal de compagnie. En effet, PetWish offre un séjour de qualité 5 étoiles à
+                    votre compagnon à quatre pattes, pour votre plus grande tranquillité.
+                </p>
+                <p>
+                    J'ai créé un site web d'une page dans le but de promouvoir un service
+                    inhabituel. Afin de susciter l'intérêt des jeunes adultes et de conserver une
+                    atmosphère positive autour des animaux, j'ai opté pour des couleurs vives et
+                    un ton humoristique.
+                </p>
+                <a href="https://www.behance.net/gallery/134098421/PetWish-UIUX-landing ">Voir le projet sur Behance</a>
+            </section>
+            <section class="portfolio_section_images">
+                <figure>
+                    <img src="./../Pages de portefolio/PetWish/phone.png" alt="image montrant le travail réalisé" onclick="FullView(this.src)">
+                </figure>
+                <figure>
+                    <img src="./../Pages de portefolio/PetWish/desktop.png" alt="image montrant le travail réalisé" onclick="FullView(this.src)">
+                </figure>
+            </section>
+        </article>
+        <!-- Full Image -->
+        <div id="protfolio_fullImage" onclick="this.style.display='none';">
+            <img id="fullImage">
+        </div>
+        
+    </main>
+
+    <script src="./../JS/script.js"></script>
+</body>
+</html>

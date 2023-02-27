@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../Css/general.css">
+    <link rel="stylesheet" href="./../Css/genev.css">
+    <title>Renata ! VOLLE RAVEL</title>
+</head>
+<body onload="getPics()">
+    <header class="portfolio_header">
+        <a href="./../index.html">
+            <img src="./../Pages de portefolio/home_blanc.svg" alt="icone d'une maison" class="homeIcon">
+        </a>
+        <figure>
+            <img src="./../Pages de portefolio/Volle Ravel/volle_logo.svg" alt="logo Volle Ravel" class="portfolio_logo">
+        </figure>
+    </header>
+    <main>
+        <article class="portfolio_article">
+            <section class="portfolio_section_text">
+                <p>
+                    Volle Ravel est une école de danse classique et de pilates située à Valence.
+                    Cette école a une réputation locale et existe depuis plus de 30 ans.
+                </p>
+                <p>
+                    Au cours de ce projet, j'ai travaillé sur la charte graphique de l'école et je me
+                    suis chargé de créer une affiche pour les promouvoir. Pour refléter l'histoire de
+                    la danse, il était essentiel de respecter une esthétique stricte. Le logo est
+                    illustré par une ballerine, représentant ainsi immédiatement l'activité de
+                    l'école. Une police d'écriture stricte et élégante a été choisie. Des couleurs
+                    sombres et calmes communiquent le statut de l'institution. De plus, j'ai ajouté
+                    des éléments décoratifs accentués à l'affiche, ce qui montre une vision
+                    différente et innovante de cette activité.
+                </p>
+            </section>
+            <section class="portfolio_section_images portfolio_section_images_pc">
+                <div class="portoflio_gallery_col">
+                    <figure>
+                        <img src="./../Pages de portefolio/Volle Ravel/compress/volle4.png" alt="image montrant le travail réalisé" onclick="FullView(this.src)">
+                    </figure>
+                    <figure>
+                        <img src="./../Pages de portefolio/Volle Ravel/compress/volle3.png" alt="image montrant le travail réalisé" onclick="FullView(this.src)">
+                    </figure>
+                </div>
+                <div class="portoflio_gallery_col">
+                    <figure>
+                        <img src="./../Pages de portefolio/Volle Ravel/compress/volle_poster.png" alt="image montrant le travail réalisé" onclick="FullView(this.src)">
+                    </figure>
+                </div>
+                <div class="portoflio_gallery_col">
+                    <figure>
+                        <img src="./../Pages de portefolio/Volle Ravel/compress/volle2.png" alt="image montrant le travail réalisé" onclick="FullView(this.src)">
+                    </figure>
+                    <figure>
+                        <img src="./../Pages de portefolio/Volle Ravel/compress/volle1.png" alt="image montrant le travail réalisé" onclick="FullView(this.src)">
+                    </figure>
+                </div>
+            </section>
+            <section class="portfolio_section_images portfolio_section_images_mobile">
+                <figure>
+                    <img src="./../Pages de portefolio/Volle Ravel/compress/volle_poster.png" alt="image montrant le travail réalisé"
+                        onclick="FullView(this.src)">
+                </figure>
+                <figure>
+                    <img src="./../Pages de portefolio/Volle Ravel/compress/volle2.png" alt="image montrant le travail réalisé"
+                        onclick="FullView(this.src)">
+                </figure>
+                <figure>
+                    <img src="./../Pages de portefolio/Volle Ravel/compress/volle3.png" alt="image montrant le travail réalisé"
+                        onclick="FullView(this.src)">
+                </figure>
+                <figure>
+                    <img src="./../Pages de portefolio/Volle Ravel/compress/volle1.png" alt="image montrant le travail réalisé"
+                        onclick="FullView(this.src)">
+                </figure>
+                <figure>
+                    <img src="./../Pages de portefolio/Volle Ravel/compress/volle4.png" alt="image montrant le travail réalisé"
+                        onclick="FullView(this.src)">
+                </figure>
+            </section>
+        </article>
+        
+        <!-- Full Image -->
+        <div id="protfolio_fullImage" onclick="this.style.display='none';">
+            <img id="fullImage">
+        </div>
+    </main>
+
+    <script src="./../JS/script.js"></script>
+</body>
+</html>

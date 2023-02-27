@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+*, ::after, ::before{
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+img{
+    width: 100%;
+}
+
+h1 {
+    font-size: 96px;
+}
+
+h2 {
+    font-size: 64px;
+}
+
+h3 {
+    font-size: 36px;
+}
+
+/* Fonts des textes */
+h1, h2, h3, h4{
+    font-family: 'Lora', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+p, a{
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+/* Général des pages Portfolio */
+
+/* Portfolio : Header */
+
+
+.portfolio_header {
+    display: flex;
+    height: 150px;
+    justify-content: center;
+    padding: 40px 10%;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.portfolio_header figure {
+    height: 100%;
+}
+
+.portfolio_header figure img {
+    height: 100%;
+}
+
+.portfolio_header .homeIcon {
+    height: 30px;
+    width: fit-content;
+    position: absolute;
+    top: 20px;
+    left: 5%;
+}
+
+/* Portfolio Contenu */
+
+.portfolio_article {
+    display: flex;
+    padding: 0 100px;
+    justify-content: space-between;
+    padding-bottom: 60px;
+    gap: 40px;
+}
+
+.portfolio_section_text {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.portfolio_section_text p {
+    margin-bottom: 30px;
+}
+
+.portfolio_section_images {
+    width: 55%;
+}
+
+
+#protfolio_fullImage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #33333390;
+    display: none;
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+}
+
+#protfolio_fullImage img{
+    height: 80%;
+    width: 60%;
+    object-fit: contain;
+}
+
+#closeBtn{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    font-size: 36px;
+    color: white;
+    cursor: pointer;
+}
+/* Portfolio slider */
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 3px 0 0 3px;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* The dots/bullets/indicators */
+
+.slideDots{
+    margin-top: 40px;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #717171;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: white;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+/* Responsif */
+
+@media (max-width: 1023px) {
+.portfolio_article {
+    flex-direction: column;
+}
+
+.portfolio_section_text {
+    width: 100% !important;
+}
+
+.portfolio_section_text a{
+    text-align: center;
+    width: 100% !important;
+}
+
+.portfolio_section_images {
+    width: 100% !important;
+}
+}
+
+
+@media (max-width:668px) {
+
+.portfolio_article {
+    padding: 0 5% !important;
+}
+
+#protfolio_fullImage img {
+    height: 90%;
+    width: 90%;
+    object-fit: contain;
+}
+
+
+h1 {
+    font-size: 64px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+p, a{
+    font-size: 16px;
+}
+}
+
+@media (max-width:500px) {
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+p, a{
+    font-size: 16px;
+}
+}
+
+@media (max-width:320px) {
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+p, a{
+    font-size: 16px;
+}
+}

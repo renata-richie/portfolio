@@ -1,0 +1,69 @@
+/******** BEELDING STYLES ********/
+
+body {
+    padding-bottom: 200px;
+    position: relative;
+}
+
+.portfolio_section_text p {
+    color: black;
+}
+
+.portfolio_section_text p:nth-child(2) {
+    margin-bottom: 40px;
+}
+
+.portfolio_section_text {
+    width: 45%;
+}
+
+.portfolio_section_text a{
+    color: white;
+    font-weight: bold;
+    background-color: #FF007A;
+    padding: 13px 36px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    position: relative;
+    z-index: 11;
+    width: fit-content;
+}
+
+.portfolio_section_text a:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.portfolio_section_images {
+    max-width: 500px !important;
+    height: 450px;
+    display: flex;
+    position: relative;
+}
+
+.portfolio_section_images figure img{
+    height: 100%;
+    object-fit: contain;
+}
+.portfolio_section_images figure:nth-child(1){
+    height: 300px;
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.portfolio_section_images figure:nth-child(2){
+    z-index: 0;
+    height: 300px;
+    position: absolute;
+    right: 0;
+}
+
+
+@media (max-width: 1023px) {
+    .portfolio_section_images{
+        margin-inline: auto;
+    }
+    
+}

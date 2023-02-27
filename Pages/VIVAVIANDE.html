@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../Css/general.css">
+    <link rel="stylesheet" href="./../Css/vivaviande.css">
+    <title>Renata ! VIVAVIANDE</title>
+</head>
+<body onload="getPics()">
+    <header class="portfolio_header">
+        <a href="./../index.html">
+            <img src="./../Pages de portefolio/home_noir.svg" alt="icone d'une maison" class="homeIcon">
+        </a>
+        <figure>
+            <img src="./../Pages de portefolio/Vivaviande/vivaviande_logo.svg" alt="logo VIVAVIANDE" class="portfolio_logo">
+        </figure>
+    </header>
+    <main>
+        <article class="portfolio_article">
+            <section class="portfolio_section_text">
+                <p>
+                    Au cours de nos cours de communication, nous avons créé une entreprise
+                    fictive de A à Z et leur avons proposé un dossier de recommandation. Dans
+                    ce dossier, nous avons effectué une analyse du secteur et défini les étapes à
+                    suivre pour le développement d'une marque, allant de la conception de son
+                    identité à la gestion de sa communauté.
+                </p>
+                <p>
+                    Vivaviande est une entreprise qui met l'accent sur la responsabilité dans la
+                    production de viande. Elle propose une chaîne de boucheries à travers toute
+                    la France, offrant des produits locaux issus de l'artisanat local. Cette chaîne
+                    est spécialisée dans la production de viande locale, éthique et durable.
+                </p>
+                <p>
+                    La marque vivaviande se caractérise par des couleurs qui évoquent
+                    l'environnement de ferme : marron, vert et rose, pour rappeler respectivement
+                    les fermes, la partie écologique et l'activité animalière, afin de créer une
+                    atmosphère campagnarde. Son logo est composé de formes simples, pour
+                    montrer sa simplicité, et d'un fermier, symbole de la production locale,
+                    accompagné d'une herbe, qui souligne son côté éco-responsable.
+                </p>
+            </section>
+            <section class="portfolio_section_images">
+                <figure>
+                    <img src="./../Pages de portefolio/Vivaviande/compress/vivaviande.png" alt="image montrant le travail réalisé" onclick="FullView(this.src)">
+                </figure>
+            </section>
+        </article>
+
+        <!-- Full Image -->
+        <div id="protfolio_fullImage" onclick="this.style.display='none';">
+            <img id="fullImage">
+        </div>
+    </main>
+
+    <script src="./../js/script.js"></script>
+</body>
+</html>

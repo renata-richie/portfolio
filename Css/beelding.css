@@ -1,0 +1,67 @@
+/******** BEELDING STYLES ********/
+
+body {
+    background-color: #131313;
+    padding-bottom: 200px;
+}
+
+.portfolio_section_text p {
+    color: white;
+}
+
+.portfolio_header {
+    height: 300px;
+    margin-bottom: 40px;
+}
+
+.portfolio_section_text {
+    width: 45%;
+}
+
+.portfolio_section_text a{
+    color: white;
+    font-weight: bold;
+    background-color: #FBC411;
+    padding: 13px 36px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    width: fit-content;
+}
+
+.portfolio_section_text a:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.portfolio_section_images {
+    width: 55%;
+}
+
+.portfolio_section_images figure {
+    width: 80%;
+    margin: auto;
+}
+
+
+/* Modifs Slider */
+
+.portfolio_article {
+    position: relative;
+}
+
+.slideDots {
+    position: absolute;
+    left: 50%;
+    bottom: -10%;
+    transform: translateX(-50%);
+}
+
+.prev,
+.next {
+    color: white;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: darkgray;
+}

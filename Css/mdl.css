@@ -1,0 +1,32 @@
+/******** BFA STYLES ********/
+
+body{
+    background-color: #181818;
+    padding-bottom: 200px;
+}
+
+.portfolio_section_text p {
+    color: white;
+}
+
+
+.portfolio_article {
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.portfolio_section_text {
+    width: 70%;
+}
+
+
+.portfolio_section_images {
+    width: 70%;
+}
+
+.portfolio_section_images figure{
+    width: 80%;
+    margin: auto;
+}

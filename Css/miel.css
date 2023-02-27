@@ -1,0 +1,49 @@
+/******** MIEL STYLES ********/
+
+body{
+    background-color: #F1C46A;
+    padding-bottom: 200px;
+}
+
+.portfolio_section_text p {
+    color: white;
+}
+
+.portfolio_section_text {
+    width: 45%;
+}
+
+
+.portfolio_section_images {
+    width: 55%;
+}
+
+.portfolio_section_images figure {
+    width: 80%;
+    margin: auto;
+}
+
+
+/* Modifs Slider */
+
+.portfolio_article {
+    position: relative;
+}
+
+.slideDots{
+    position: absolute;
+    left: 50%;
+    bottom: -10%;
+    transform: translateX(-50%);
+}
+
+.prev,
+.next {
+    color: black;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: white;
+}
+

@@ -1,0 +1,30 @@
+/******** RUSTIGR STYLES ********/
+
+body{
+    background-color: #11115B;
+}
+
+.portfolio_section_text p {
+    color: white;
+}
+
+
+
+.portfolio_article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.portfolio_section_text {
+    width: 50%;
+}
+
+
+.portfolio_section_images {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

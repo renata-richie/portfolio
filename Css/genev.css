@@ -1,0 +1,134 @@
+/******** GENEV STYLES ********/
+
+body{
+    background-color: #45022E;
+    padding-bottom: 200px;
+}
+
+
+.portfolio_section_text p {
+    color: white;
+}
+
+.portfolio_section_images_mobile{
+    display: none;
+}
+
+.portfolio_article {
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.portfolio_section_text {
+    width: 70%;
+}
+
+
+.portfolio_section_images_pc {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    height: 500px;
+}
+
+.portoflio_gallery_col{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    width: 25%;
+    height: 500px;
+}
+
+.portoflio_gallery_col figure img {
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 1ere colonne */
+
+.portoflio_gallery_col:nth-child(1) figure:nth-child(1) {
+    height: 45%;
+}
+
+
+/* 2eme colonne */
+
+.portoflio_gallery_col:nth-child(2){
+    width: 50%;
+}
+
+.portoflio_gallery_col:nth-child(2) figure {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.portoflio_gallery_col:nth-child(2) figure img {
+    height: 100%;
+    border: 1px solid white;
+    width: 90%;
+}
+
+/* 3eme colonne */
+
+.portoflio_gallery_col:nth-child(3) figure:nth-child(1){
+    height: 60%;
+}
+
+.portoflio_gallery_col:nth-child(3) figure:nth-child(2){
+    height: 35%;
+}
+
+.portoflio_gallery_col:nth-child(3) figure img{
+    width: 100%;
+}
+
+
+/* Responsif */
+
+@media (max-width: 900px) {
+.portfolio_section_images_pc{
+    display: none;
+}
+
+.portfolio_section_images_mobile{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.portfolio_section_images_mobile figure{
+    width: 48%;
+}
+
+.portfolio_section_images_mobile figure img{
+    height: 100%;
+    object-fit: cover;
+}
+}
+
+@media (max-width: 556px) {
+.portfolio_section_images_pc{
+    display: none;
+}
+
+.portfolio_section_images_mobile{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.portfolio_section_images_mobile figure{
+    width: 100%;
+}
+
+.portfolio_section_images_mobile figure img{
+    height: 100%;
+    object-fit: cover;
+}
+}

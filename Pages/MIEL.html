@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../Css/general.css">
+    <link rel="stylesheet" href="./../Css/miel.css">
+    <title>Renata ! MIEL</title>
+</head>
+<body onload="getPics()">
+    <header class="portfolio_header">
+        <a href="./../index.html">
+            <img src="./../Pages de portefolio/home_blanc.svg" alt="icone d'une maison" class="homeIcon">
+        </a>
+        <figure>
+            <img src="./../Pages de portefolio/Miel/miel_logo.svg" alt="logo Miel" class="portfolio_logo">
+        </figure>
+    </header>
+    <main>
+        <article class="portfolio_article">
+            <section class="portfolio_section_text">
+                <p>
+                    Daniel Boiron, un artisan local, est à l'origine de la marque de miel artisanal
+                    Miel de Montagne, qui est produite dans les Hauts-Alpes.
+                </p>
+                <p>
+                    J’ai eu pour objectif de moderniser l'étiquette du miel et de créer une charte
+                    graphique. Pour y parvenir, nous avons opté pour une image authentique en
+                    sélectionnant des couleurs reflétant celles du miel et du bois.
+                </p>
+                <p>
+                    Le logo est composé d'une abeille qui fait référence à l'activité du commerce
+                    et d'une montagne qui représente les lieux où le miel est récolté. L'écriture
+                    manuscrite ajoute une touche authentique et une ruche entoure l'ensemble,
+                    créant l'impression d'une étiquette et rappelant les ruches des abeilles.
+                </p>
+            </section>
+            <section class="portfolio_section_images slideshow-container">
+                <figure class="mySlides fade">
+                    <img src="./../Pages de portefolio/Miel/compress/image 92.png" alt="image montrant le travail réalisé" onclick="FullView(this.src)">
+                </figure>
+                <figure class="mySlides fade">
+                    <img src="./../Pages de portefolio/Miel/compress/image 93.png" alt="image montrant le travail réalisé" onclick="FullView(this.src)">
+                </figure>
+                <figure class="mySlides fade">
+                    <img src="./../Pages de portefolio/Miel/compress/image 94.png" alt="image montrant le travail réalisé" onclick="FullView(this.src)">
+                </figure>
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
+                <div class="slideDots">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+
+                
+            </section>
+            
+        </article>
+        
+        <!-- Full Image -->
+        <div id="protfolio_fullImage" onclick="this.style.display='none';">
+            <img id="fullImage">
+        </div>
+        
+    </main>
+    
+    <script src="./../JS/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../Css/general.css">
+    <link rel="stylesheet" href="./../Css/mdl.css">
+    <title>Renata ! MDL</title>
+</head>
+<body onload="getPics()">
+    <header class="portfolio_header">
+        <a href="./../index.html">
+            <img src="./../Pages de portefolio/home_blanc.svg" alt="icone d'une maison" class="homeIcon">
+        </a>
+        <figure>
+            <img src="./../Pages de portefolio/MDL/mdl_logo.svg" alt="logo MDL" class="portfolio_logo">
+        </figure>
+    </header>
+    <main>
+        <article class="portfolio_article">
+            <section class="portfolio_section_text">
+                <p>
+                    Durant mes années de lycée, j'ai été chargé de communication à la Maison
+                    des lycéens. Mes tâches étaient notamment la gestion des réseaux sociaux et
+                    la création de visuels pour informer les élèves des événements organisés par
+                    la MDL.
+                </p>
+            </section>
+            <section class="portfolio_section_images slideshow-container">
+                <figure class="mySlides fade">
+                    <img src="./../Pages de portefolio/MDL/compress/mdl1.png" alt="image montrant le travail réalisé" onclick="FullView(this.src)">
+                </figure>
+                <figure class="mySlides fade">
+                    <img src="./../Pages de portefolio/MDL/compress/mdl2.png" alt="image montrant le travail réalisé" onclick="FullView(this.src)">
+                </figure>
+                <figure class="mySlides fade">
+                    <img src="./../Pages de portefolio/MDL/compress/mdl3.png" alt="image montrant le travail réalisé" onclick="FullView(this.src)">
+                </figure>
+                <figure class="mySlides fade">
+                    <img src="./../Pages de portefolio/MDL/compress/mdl4.png" alt="image montrant le travail réalisé" onclick="FullView(this.src)">
+                </figure>
+                <figure class="mySlides fade">
+                    <img src="./../Pages de portefolio/MDL/compress/mdl5.png" alt="image montrant le travail réalisé" onclick="FullView(this.src)">
+                </figure>
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+            </section>
+            <div class="slideDots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+        </article>
+        
+        <!-- Full Image -->
+        <div id="protfolio_fullImage" onclick="this.style.display='none';">
+            <img id="fullImage">
+        </div> 
+    </main>
+
+    <script src="./../JS/script.js"></script>
+</body>
+</html>

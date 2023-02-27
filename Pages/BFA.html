@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../Css/general.css">
+    <link rel="stylesheet" href="./../Css/bfa.css">
+    <title>Renata ! BFA</title>
+</head>
+<body onload="getPics()">
+    <header class="portfolio_header">
+        <a href="./../index.html">
+            <img src="./../Pages de portefolio/home_blanc.svg" alt="icone d'une maison" class="homeIcon">
+        </a>
+        <figure>
+            <img src="./../Pages de portefolio/BFA/logo_bfa.svg" alt="logo BFA" class="portfolio_logo">
+        </figure>
+    </header>
+    <main>
+        <article class="portfolio_article">
+            <section class="portfolio_section_text">
+                <p>
+                    Durant nos cours de communication, nous avons travaillé en équipe sur le
+                    développement de la marque BFA, une banque digitale. Notre agence a
+                    procédé à l'analyse du marché, défini le public visé et mis en place une
+                    stratégie de communication.
+                </p>
+                <p>
+                    BFA cherche à rendre la banque accessible à tous en proposant des services
+                    bancaires digitaux simples et intuitifs. En tant que banque 100% digitale, elle
+                    veut offrir une expérience plus rapide, plus facile et plus pratique.
+                </p>
+                <p>
+                    La charte graphique a été conçue avec le choix de deux couleurs : le bleu
+                    marine en tant que couleur principale et l'orange comme couleur d'accent.
+                    Ces deux couleurs créent un fort contraste, ce qui facilite l'attraction visuelle.
+                    En ce qui concerne le logo, nous avons opté pour des formes simples et
+                    géométriques pour transmettre une impression de stabilité et de confiance,
+                    étant donné que c'est une banque.
+                </p>
+            </section>
+            <section class="portfolio_section_images">
+                <figure>
+                    <img src="./../Pages de portefolio/BFA/compress/bfa.png" alt="image montrant le travail réalisé" onclick="FullView(this.src)">
+                </figure>
+            </section>
+        </article>
+
+        <!-- Full Image -->
+        <div id="protfolio_fullImage" onclick="this.style.display='none';">
+            <img id="fullImage">
+        </div>
+    </main>
+
+    <script src="./../js/script.js"></script>
+</body>
+</html>
