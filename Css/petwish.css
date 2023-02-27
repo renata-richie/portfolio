@@ -1,6 +1,7 @@
 /******** BEELDING STYLES ********/
 
 body {
+    background-image: url("./../Pages de portefolio/PetWish/background.png");
     padding-bottom: 200px;
     position: relative;
 }

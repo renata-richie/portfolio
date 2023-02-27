@@ -10,7 +10,7 @@ body {
 }
 
 .portfolio_header {
-    height: 300px;
+    height: 180px;
     margin-bottom: 40px;
 }
 
@@ -42,6 +42,9 @@ body {
     margin: auto;
 }
 
+#beeilding_logo{
+    width: 100%;
+}
 
 /* Modifs Slider */
 

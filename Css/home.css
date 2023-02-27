@@ -15,7 +15,7 @@ header{
     align-items: center;
     flex-direction: column;
     text-align: center;
-    padding: 150px 0;
+    padding: 250px 0;
 }
 
 header h1{
@@ -128,7 +128,7 @@ header a:hover{
 /* Décors Enchantée  : end */
 
 #enchantee{
-    padding: 100px 5%;
+    padding: 150px 5%;
     display: flex;
     align-items: center;
     gap: 40px;
@@ -198,7 +198,7 @@ footer figure{
 }
 
 footer figure img{
-    height: 100px;
+    height: 50px;
 }
 
 /* Responsif */

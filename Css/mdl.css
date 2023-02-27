@@ -23,10 +23,14 @@ body{
 
 
 .portfolio_section_images {
-    width: 70%;
+    width: 50%;
 }
 
 .portfolio_section_images figure{
     width: 80%;
     margin: auto;
+}
+
+#logo_mdl{
+    width: 60%;
 }

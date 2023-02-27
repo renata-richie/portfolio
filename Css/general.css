@@ -76,6 +76,10 @@ p, a{
     left: 5%;
 }
 
+.portfolio_logo{
+    width: 100%;
+}
+
 /* Portfolio Contenu */
 
 .portfolio_article {
